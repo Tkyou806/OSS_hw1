@@ -1,115 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to 22300806 Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to 허선희 Homepage 22300806</title>
+  <style>
+    
+    #div_room{
+        background-color:#F1F1F1;
+        border:solid #E2E2E2 1px;
+        margin: 20px, 20px, 0px, 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+      }
 
-<style>
-    #h1_room{
-            color: white;
-            /*border: #000000 dotted 5px;*/
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            background-color:pink;
+    #button_1{
+      border:none; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size:20px;
+      color:white;
+      background-color: #4CAF50; 
+      margin: 2px; 
+      width: 169px;
+    }
 
-            margin : 20px 20px 0px 20px;
-        }
+    #button_2{
+      border:none; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;  
+      font-size:20px;
+      color:white;
+      background-color:rgb(79, 77, 77); 
+      margin: 2px; 
+      width: 169px;
+    }
 
-        #h3_room{
-            color: white;
-            /*border: #000000 dotted 5px;*/
-            border-end-start-radius: 10px;
-            border-end-end-radius: 10px;
-            background-color:pink;
+    #button_1:hover{
+      background-color: black;
+    }
 
-            margin : 0px 20px 0px 20px;
-        }
-        
-        #choice_room{
-            color: white;
-            border-radius: 10px;
-            background-color:pink;
-            margin : 20px 40% 20px 20px;
-        }
+    #button_2:hover{
+      background-color: black;
+    }
+    .parent{
+        width:100%;
+    }
+    .child{
+        flex: 1;
+    }
 
-        #another_room{
-            color: black;
-            border-radius: 10px;
-            background-color:pink;
-
-            margin : 20px 40% 20px 20px;
-        }
-
-        #sidebar_room{
-            color: white;
-            border-radius: 10px;
-            background-color:yellowgreen;
-            margin : 20px 20px 20px 20px;
-        }
-
-        .parent{
-            display: flex;
-            
-        }
-
-        .child1{
-            flex: 1;
-        }
-
-        .child2{
-            flex: 0.5;
-        }
-
-        
-        
-</style>
+    
+  </style>
 </head>
 <body>
-    <div>
-        <h1 id="h1_room">&nbsp;Welcome to 허선희 Homepage 22300806</h1>
-        <h3 id="h3_room">&nbsp;&nbsp;Use the name to select different Stylesheets<br><br></h3>    
-    </div>
+  <div>
+    <h1 style="color:#4CAF50;">&nbsp;Welcome to 22300806 Homepage</h1>
+    <h4>&nbsp;&nbsp;Use the menu to select different Stylesheets<br><br></h4>
 
-    <p>   
+    <p style="margin:20px">
+        <a href="./style1.html" style="text-decoration:none;"><button id="button_1" >Stylesheet 1</button></a></li>
+        <a href="./style2.html" style="text-decoration:none;"><button id="button_2">Stylesheet 2</button></a></li>
+        <a href="./index.html" style="text-decoration:none;"><button id="button_2">Stylesheet 3</button></a></li>
+        <a href="./index.html" style="text-decoration:none;"><button id="button_2">Stylesheet 4</button></a></li>
+        <a href="./index.html" style="text-decoration:none;"><button id="button_2" >No Stylesheet</button></a></li>
     
-        <div class="parent" style="width: 100%;height:100%;">
-            
-            <div class="child2">
-                <h3 id="choice_room">Stylesheet 1</h3>
-                <h3 id="another_room">Stylesheet 2</h3>
-                <h3 id="another_room">Stylesheet 3</h3>
-                <h3 id="another_room">Stylesheet 4</h3>
-                <h3 id="another_room">No Stylesheet</h3>
-            </div>
+    </p>
 
-        
-        
-            <div class="child1">
-                <h1 >Same Page Different Stylesheets</h1>
-                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-                    <a href="./style1.html" style="color:black;">Stylesheet1</a>,&nbsp;
-                    <a href="./style2.html" style="color:black;">Stylesheet2</a>,&nbsp;
-                    <a href="./style1.html" style="color:black;">Stylesheet3</a>,&nbsp;
-                    <a href="./style1.html" style="color:black;">Stylesheet4</a>,&nbsp;
-                </p>
-                <h2>No Styles</h2>
-                <p>
-                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
-                <a href="./index.html" style="color:black">No Stylesheet</a>.
-                <br><br>
-                </p>
-            </div>
-            
-            <div class="child2" id="sidebar_room">
-                <h3>Side-Bar</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h1 style="color:#4CAF50;">Same Page Different Stylesheets</h1>
+    <p style="font-size: 16px;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+        <br>
+        <a href="./style1.html" style="color:black">Stylesheet1</a>,&nbsp;
+        <a href="./style2.html" style="color:black">Stylesheet2</a>,&nbsp;
+        <a href="./index.html" style="color:black">Stylesheet3</a>,&nbsp;
+        <a href="./index.html" style="text-decoration:line; color:black">Stylesheet4</a>  
+  </p>
 
-            </div>
-    
-        </div>       
-    </p>        
-            
-        
+  <h2 style="color:#4CAF50;">No Styles</h2>
+  <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+    <br>
+    <a href="./index.html" style="color:black">No Stylesheet</a>.
+  </p>
+  <div id="div_room">
+  <h3 style="color:#4CAF50;margin:20px;padding:20px 0px 0px 0px">Side-Bar</h3>
+  <p style="margin:20px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  
+    <br><br>
+</p></div>
+
+  <p style="font-size: 11.2px;text-align: center; padding:0px 10px 10px 10px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+  </div>
+</div>
+  
+  
 </body>
 </html>

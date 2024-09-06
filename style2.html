@@ -3,60 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to 허선희 Homepage 22300806</title>
+  <title>Welcome to 22300806 Homepage</title>
   <style>
-    
-    #div_room{
-        background-color: rgb(221, 218, 218);
-        margin: 20px, 20px, 0px, 20px;
+    body{
+        background-color: #000000;
+        margin:20px;
+        
+    }
+     #font_color{
+        color:#84C754;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: Courier New;
+     }
+     #a_font_color{
+        color:white;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: Courier New;
     }
 
-    .parent{
-        width:100%;
-    }
-    .child{
-        flex: 1;
-    }
+     #a_font_color:hover{
+        color:#84C754;
+        
+     }
+
+     #bottom_1{
+        border: solid white 1px;
+        font-family: 'Courier New', Courier, monospace;
+        
+        border-radius: 5px;
+        padding:5px;
+        margin: 5px;
+     }
+     #bottom_2{
+        border: solid white 1px;
+        font-family: 'Courier New', Courier, monospace;
+        
+        border-radius: 5px;
+        padding:5px;
+        margin: 5px;
+     }
+     
+     
+     @media (min-width: 600px) {
+        #bottom_1{
+            position:absolute;
+            top: 110px;
+            right:20px;
+            bottom:0px;
+            margin:0px 0px 0px 25em;
+            width:341px;
+            height:164px;
+            
+        }
+       
+}
+
   </style>
 </head>
 <body>
   <div>
-    <h1 style="color:rgb(65, 189, 65);">&nbsp;Welcome to 22300806 Homepage</h1>
-    <h4>&nbsp;&nbsp;Use the menu to select different Stylesheets<br><br></h4>
+    <h1 id="font_color">Welcome to 22300806 Homepage</h1>
+  <h4 id="font_color" style="margin: -10px 0px 0px 0px;">Use the menu to select different Stylesheets</h4>
 
-    <p>
-        <a href="./style1.html" style="text-decoration:none;"><button style="border:none; font-size:20px;color:white;background-color: #555555; margin: 2px; width: 200px;">Stylesheet 1</button></a></li>
-        <a href="./style2.html" style="text-decoration:none;"><button style="border:none; font-size:20px;color:white;background-color: green; margin: 2px; width: 200px;">Stylesheet 2</button></a></li>
-        <a href="./index.html" style="text-decoration:none;"><button style="border:none; font-size:20px;color:white;background-color: #555555; margin: 2px; width: 200px;">Stylesheet 3</button></a></li>
-        <a href="./index.html" style="text-decoration:none;"><button style="border:none; font-size:20px;color:white;background-color: #555555; margin: 2px; width: 200px;">Stylesheet 4</button></a></li>
-        <a href="./index.html" style="text-decoration:none;"><button style="border:none; font-size:20px;color:white;background-color: #555555; margin: 2px; width: 200px;">No Stylesheet</button></a></li>
-    
-    </p>
-
-    <h1 style="color:rgb(65, 189, 65);">Same Page Different Stylesheets</h1>
-    <p style="font-size: 16px;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-        <br>
-        <a href="./style1.html" style="color:black">Stylesheet1</a>,&nbsp;
-        <a href="./style2.html" style="color:black">Stylesheet2</a>,&nbsp;
-        <a href="./index.html" style="color:black">Stylesheet3</a>,&nbsp;
-        <a href="./index.html" style="text-decoration:line; color:black">Stylesheet4</a>  
-  </p>
-
-  <h2 style="color:rgb(65, 189, 65);">No Styles</h2>
-  <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+  <ul id="font_color" >
     <br>
-    <a href="./index.html" style="color:black">No Stylesheet</a>.
+    <li style="margin:10px"><a href="./style1.html" id="font_color" style="text-decoration:none; margin:10px;">Stylesheet 1</a></li>
+    <li style="margin:10px"><a href="./style2.html" id="font_color" style="text-decoration:none; margin:10px;color:white">Stylesheet 2</a></li>
+    <li style="margin:10px"><a href="./index.html" id="font_color" style="text-decoration:none; margin:10px;">Stylesheet 3</a></li>
+    <li style="margin:10px"><a href="./index.html" id="font_color" style="text-decoration:none; margin:10px;">Stylesheet 4</a></li>
+    <li style="margin:10px"><a href="./index.html" id="font_color" style="text-decoration:none; margin:10px;">No Stylesheet</a></li>
+    <br>
+  </ul>
+
+  <h1 id="font_color">Same Page Different Stylesheets</h1>
+  <p id="font_color">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+  <br>
+  <a href="./style1.html" id="a_font_color">Stylesheet1</a>,&nbsp;
+  <a href="./style2.html" id="a_font_color">Stylesheet2</a>,&nbsp;
+  <a href="./index.html" id="a_font_color">Stylesheet3</a>,&nbsp;
+  <a href="./index.html" style="text-decoration:line;" id="a_font_color">Stylesheet4</a>  
   </p>
-  <div id="div_room">
-  <h3 style="color:rgb(65, 189, 65);">Side-Bar</h3>
-  <p style="margin:20px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  
-    <br><br>
-</p></div>
 
-  <p style="font-size: 11.2px;text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-
-  </div>
+  <h2 id="font_color">No Styles</h2>
+  <p id="font_color">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+    <br>
+    <a href="./index.html" id="a_font_color">No Stylesheet</a>.
+  </p>
+  <div id="bottom_1" id="div_position_fixed">
+  <h3 style="font-size:14.976px;color:white;margin:20px;">Side-Bar</h3>
+    
+  <p style="color:white;font-size:12.8px; margin:20px;">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </p>
+</div>
+  <div id="bottom_2" style="color:white; font-size:11.2px;text-align:center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</div>
 </div>
   
   
