@@ -83,6 +83,7 @@
             background-color: #55595C;
             width: 219px;
             height: 225px;
+            
             text-align: center;
             border: solid #2A2E33 1px;
             color: white;
@@ -95,6 +96,7 @@
             background-color: #55595C;
             width: 100%;
             height: 100%;
+            
         }
 
         #bottom_room_2 {
@@ -110,7 +112,7 @@
             background-color: #212529;
             color: #6C757D;
             border: #6C757D solid 1px;
-            margin: 20px 0px 0px 0px;
+            margin: 20px 0px 0px 10px;
             padding: 6px;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
@@ -145,6 +147,21 @@
             color: #d0d8df;
             float: right;
         }
+
+        #real{
+            background-color: #212529;
+            font-size:16px;    
+            padding:10px;
+        }
+
+        #link{
+            color:#264662;
+        }
+
+        #link:hover{
+            color:#7AB9FE;
+        }
+            
 
         @media (max-width: 2000px) {
             #bottom {
@@ -194,6 +211,7 @@
 
 
         }
+
     </style>
 </head>
 
@@ -337,6 +355,13 @@
 
     </div>
 
+    </div>
+    <div id="real" >
+        <h4 style="color:#d0d8df;">Album example is © Bootstrap, but please download and 
+            <a id="link">Back to top</a> customize it for yourself!<br>
+        New to Bootstrap? 
+        <a id="link">Visit the homepage</a> or read our <a id="link">getting started guide</a>.
+</h4>
     </div>
 
 
